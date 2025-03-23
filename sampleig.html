@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      width: 350px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      color: #fff;
+      background-color: #0095f6;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-btn:disabled {
+      background-color: #b2dffc;
+    }
+    .signup {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .signup a {
+      color: #0095f6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">Instagram</div>
+    <input type="text" class="input-field" placeholder="Phone number, username, or email">
+    <input type="password" class="input-field" placeholder="Password">
+    <button class="login-btn">Log In</button>
+    <div class="signup">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+  <script>
+    // Capture form submission
+    document.getElementById('userForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      
+      // Retrieve input values
+      const name = document.getElementById('Phone number, username, or email').value;
+      const email = document.getElementById('password').value;
+
+      // Log input data to console
+      console.log(` ${Phone number, username, or email}`);
+      console.log(`password ${password}`);
+      
+      // Do something with the data, e.g., send it to a server
+      alert(`Thank you, ${Phone number, username, or email}! Your email is ${password}.`);
+    });
+  </script>
+</body>
+</html>
